@@ -1,0 +1,10 @@
+<div *ngIf="selectedAlbum">
+    <table>
+        <tr *ngFor="let track of selectedAlbum.tracks">
+            <td>{{track.title}}</td>
+            <td>
+                <img src="{{track.thumbnailUrl}}" alt="{{track.title}}" />
+            </td>
+        </tr>
+    </table>
+</div>

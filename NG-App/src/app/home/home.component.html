@@ -1,0 +1,8 @@
+<p>home works!</p>
+<h1>Hi {{currentUser.firstName}}!</h1>
+<p>You're logged in with Angular 8!!</p>
+
+<app-content [albums]="albums" (selectedAlbum)="onSelectedAlbum($event)"></app-content>
+
+
+<app-content-detail [selectedAlbum]="selectedAlbum"></app-content-detail>
